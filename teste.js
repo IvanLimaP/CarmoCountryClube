@@ -66,3 +66,66 @@ let veiculoAlterado = {...veiculo, active: true}
 console.log(veiculo)
 console.log(veiculoAlterado)
 
+//resolvendo exercicio
+
+const tasks = [
+    { descrição: 'Passear com o cachorro', prioridade: 1, status: 'Concluida' },
+    { descrição: 'Comprar ingredientes para o almoço', prioridade: 1, status: 'Concluida' },
+    { descrição: 'Fazer o almoço', prioridade: 1, status: 'Pendente' },
+    { descrição: 'Ir para a academia', prioridade: 2, status: 'Pendente' },
+    { descrição: 'Resolver exercicio do curso', prioridade: 1, status: 'Concluida' },
+    { descrição: 'Ir para o futebol', prioridade: 3, status: 'Pendente' },
+]
+
+//encontrar uma tarefa especifica
+const selectedTask = tasks.find((tasks) => tasks.descrição === 'Fazer o almoço');
+console.log(selectedTask);
+
+//verificar se todas as tarefas estão concluidas
+const isEveryTaskDone = tasks.every((tasks) => tasks.status === 'Concluida');
+console.log(isEveryTaskDone);
+
+//contar tarefas pendentes
+/*const pendingTasksQtd = tasks.reduce((prev, next) => {
+    if (next.status === 'Pendente') return prev + 1;
+    return prev;
+}, 0);
+
+console.log(pendingTasksQtd);*/
+
+//ordenar tarefas por prioridade 
+/*const sortedTasks = tasks.sort((prevTask, currentTask) => prevTask.prioridade - currentTask.prioridade);
+console.log(sortedTasks)*/
+
+//adicionando novas tarefas
+/*tasks.push({descrição: 'Treinar violão', prioridade: 2, status: 'Pendente'})
+console.log(tasks)*/
+
+//remover tarefas concluidas
+/*const pendingTasks = tasks.filter((tasks) => tasks.status === 'Pendente'); pode fazer assim ou desse outro jeito abaixo
+const pendingTasks = tasks.filter(({ status }) => status === 'Pendente');
+console.log(pendingTasks);*/
+
+//marcar tarefas como concluidas
+/*const doneTasks = tasks.map((tasks) => ({ ...tasks, status: 'Concluida'}));
+console.log(doneTasks);*/
+
+//Promise
+
+console.log('Buscar dados em um servidor');
+
+let promessaDeBusca = new Promise((resolve, reject) => {
+    console.log('Iniciando busca de dados no servidor')
+
+    setTimeout(() => {
+        let sucesso = true;
+        if (sucesso) resolve({name: 'Fabio', age: 28})
+        else reject('Opa, aconteceu um erro no servidor! Dados não encontrados')
+    }, 5000)
+})
+
+console.log('Vida que segue, estou fazendo outras coisas no condigo enquanto executa a busca')
+
+promessaDeBusca
+    .then(console.log)
+    .catch(console.log)

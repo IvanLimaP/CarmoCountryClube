@@ -8,7 +8,6 @@ html {
 }
 
 
-
 ul{
   list-style-type: none;
   margin: 0;
@@ -31,6 +30,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: 4rem;
   color: rgb(192, 191, 191);
   
 
@@ -173,7 +173,17 @@ a:hover {
    width: 100rem;
 }
 
+#footerId {
+   background-color: transparent;
+}
+
 @media only screen and (min-width: 1080px) and (max-width: 1919px) {
+
+#menuSuperior, a {
+   font-size: 18px;
+}
+
+
 .imgCard {
    height: 25rem;
    width: 18rem;
@@ -220,5 +230,7 @@ a:hover {
    width: 70rem;
    background-color: transparent;
 }
+
+
 
 }

@@ -17,7 +17,7 @@ h1{
 
 .cardsProdutos {
     width: 20rem;
-    height: 28rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,9 @@ h1{
 }
 
 .cardsProdutos:hover {
-    color: white;
+   transition: transform 0.6s;
+   transform: scale(1.05);
+
 }
 
 .imgProdutos {
@@ -39,7 +41,6 @@ h1{
 }
 
 .imgProdutos:hover {
-    cursor: pointer;
     transition: transform 0.6s;
     transform: scale(1.1);
 }
@@ -56,3 +57,45 @@ h1{
 
 }
 
+#divComprar {
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.buttonComprar {
+    width: 14rem;
+    height: 3.5rem;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgb(2, 119, 17);
+}
+
+.a-button {
+    padding: 5px 50px 5px 50px;
+}
+
+.buttonComprar:hover {
+    cursor: pointer;
+    background-color: rgb(2, 87, 13);
+    
+}
+
+.buttonCart {
+    width: 4rem;
+    height: 3rem;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.buttonCart:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(207, 207, 207);
+}
+
+.a-button-cart {
+    padding: 10px 12px 10px 12px;
+}
