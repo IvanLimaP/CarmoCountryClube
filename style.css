@@ -49,7 +49,7 @@ a:hover {
 }
 
 #textoSuperior {
-   height: 12rem;
+   height: 15rem;
    display: flex;
    justify-content: center;
    text-align: center;
@@ -57,6 +57,12 @@ a:hover {
    color: white;
    font-size: 20px;
    background: linear-gradient(180deg, #1a1a1a86, #000000 );
+}
+
+#textoSuperior > img {
+   width: 15rem;
+   height: 15rem;
+   padding-right: 5rem;
 }
 
 .card {
@@ -120,6 +126,7 @@ a:hover {
    width: auto;
    display: flex;
    align-items: center;
+   justify-content: space-around;
    flex-direction: row;
    background: linear-gradient(180deg, #1a1a1a86, #000000 );
 
@@ -127,9 +134,6 @@ a:hover {
 
 .P-eventos {
    width: 70rem;
-  
-   padding-left: 4rem;
-   padding-right: 4rem;
    font-size: 22px;
    color: white;
 }
@@ -141,21 +145,34 @@ a:hover {
    flex-direction: row;
    height: 60rem;
    align-items: center;
-   justify-content: center;
+   justify-content: space-around;
 }
 
-#footerId {
+#footer-id {
    display: flex;
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   margin-top: 25rem;
    height: 40rem;
-   background-color: rgba(0, 0, 0, 0.849);
+   width: auto;
 
 }
 
-.P-footer {
+#footer-id > Ul {
+   background: none;
+   width: 60%;
+}
+
+#footer-id > ul > li > a {
+   width: 12rem;
+   font-size: 1.5rem;  
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+
+#footer-id > P {
   display: flex;
   align-items: center;
   text-align: center;
@@ -226,11 +243,145 @@ a:hover {
    font-size: 15px;
 }
 
-.footerUl {
-   width: 70rem;
-   background-color: transparent;
+
+#footer-id > Ul {
+   background: none;
+   width: 80%;
+}
+
+}
+
+@media only screen and (min-width: 340px) and (max-width: 714px) {
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  width: auto;
+  height: 5rem;
+  font-size: 10px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.849);
+
+}
+
+#textoSuperior {
+   height: 15rem;
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   color: white;
+   font-size: 10px;
+   background: linear-gradient(180deg, #1a1a1a86, #000000 );
+}
+
+#textoSuperior > img {
+   width: 8rem;
+   height: 8rem;
+}
+
+.card {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   height: auto;
+   width: auto;
+}
+
+.card > .imgCard2 {
+   height: 25rem;
+   width: 20rem;
+   margin-top: 3.5rem;
+   border-radius: 2rem;
+   box-shadow: 0 10px 12px 0 rgb(12, 59, 15);
+}
+
+.card > .imgCard {
+   height: 25rem;
+   width: 20rem;
+   border-radius: 2rem;
+   box-shadow: 0 10px 12px 0 rgb(12, 59, 15);
+}
+
+.novidadesDaSemana {
+   height: auto;
+   width: auto;
+   margin-top: 4rem;
+   background: linear-gradient(180deg, #1a1a1a86, #000000 );
+}
+
+.novidadesDaSemana > .Eventos1 {
+   height: 50rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+}
+
+.novidadesDaSemana > .Eventos1 > .P-eventos{
+   width: 95%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 12px;
+}
+
+.novidadesDaSemana > .Eventos1 > .imgCard {
+   height: 25rem;
+   width: 20rem;
+   margin-bottom: 5rem;
+   border-radius: 2rem;
+   box-shadow: 0 10px 12px 0 rgb(12, 59, 15);
+}
+
+.novidadesDaSemana > .Eventos2 {
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+
 }
 
 
+.novidadesDaSemana > .Eventos2 > .P-eventos{
+   width: 95%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 12px;
+}
+
+.novidadesDaSemana > .Eventos2 > .imgCard {
+   height: 25rem;
+   width: 20rem;
+   border-radius: 2rem;
+   box-shadow: 0 10px 12px 0 rgb(12, 59, 15);
+}
+
+#footer-id {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: 30rem;
+   width: auto;
+   margin-bottom: 2rem;
+
+}
+
+#footer-id > ul {
+   height: auto;
+   display: flex;
+   flex-direction: column;
+
+}
 
 }

@@ -14,6 +14,10 @@ h1{
 
 }
 
+main > h1 {
+    height: 10rem;
+}
+
 
 .cardsProdutos {
     width: 20rem;
