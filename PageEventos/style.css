@@ -1,0 +1,90 @@
+
+
+.DivPageEventos {
+    margin-top: 10rem;
+    height: 36rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180deg, #1a1a1a86, #000000 );
+
+}
+
+.DivPageEventos2 {
+    margin-top: 10rem;
+    height: 36rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(180deg, #1a1a1a86, #000000 );
+
+}
+
+
+.imgCardEventos {
+   height: 35rem;
+   width: 38rem;
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1919px) {
+
+    .imgCardEventos {
+        width: 35rem;
+    }
+
+}
+
+@media only screen and (min-width: 340px) and (max-width: 714px) {
+
+    .DivPageEventos {
+        margin-top: 5rem;
+        height: 43rem;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: linear-gradient(180deg, #1a1a1a86, #000000 );
+
+}    
+
+    .DivPageEventos2 {
+        margin-top: 5rem;
+        height: 36rem;
+        width: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        background: linear-gradient(180deg, #1a1a1a86, #000000 );
+
+}
+
+    .imgCardEventos {
+        height: 20rem;
+        width: 18rem;
+}
+
+.DivPageEventos > .P-eventos{
+   width: 95%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 15px;
+}
+
+.DivPageEventos2 > .P-eventos{
+   width: 95%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   font-size: 15px;
+}
+
+}
