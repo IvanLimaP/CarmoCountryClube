@@ -16,11 +16,31 @@
  }
 
  header h1 {
-     width: 42rem;
+     width: 40rem;
      display: flex;
      justify-content: end;
      font-size: 24px;
  }
+
+ #divImagens {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+ }
+
+ .imagemProdutos {
+    width: 15rem;
+    height: 14rem;
+    border-radius: 12px;
+    background: #020202;
+
+ }
+
+#divImagens > img {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
 
  .cart-icon {
      position: relative;
@@ -46,6 +66,7 @@
      display: flex;
      flex-direction: row;
      justify-content: space-around;
+     margin-top: 1rem;
 
  }
 
@@ -54,7 +75,8 @@
      flex-direction: column;
      background: #2c2c2c;
      border-radius: 12px;
-     width: 30rem;
+     width: 15rem;
+     height: 20rem;
      text-align: center;
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
  }
@@ -62,6 +84,7 @@
  .card > img {
      width: 17rem;
      height: 15rem;
+     background: blue;
  }
 
  .price {
@@ -73,7 +96,7 @@
      display: flex;
      justify-content: space-around;
      align-items: center;
-     width: 28rem;
+     width: 13rem;
      padding: 1rem;
      background: #000;
  }
@@ -83,8 +106,9 @@
      color: white;
      border: none;
      border-radius: 6px;
-     padding: 1.5rem 7rem;
+     padding: 1.1rem 3rem;
      cursor: pointer;
+     margin-right: .5rem;
      transition: 0.3s;
  }
 
@@ -95,7 +119,7 @@
  .cart-btn {
      background: #eee;
      border-radius: 6px;
-     padding: 1.5rem 2rem;
+     padding: 1rem 1rem;
      cursor: pointer;
  }
 
